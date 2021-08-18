@@ -1,24 +1,23 @@
 <!-- *************** *** section d'acceuil *** ******************* -->
-<div class="container-fluid">
   <div class="color-bg d-flex">
     <div class="color-bg-secondary"></div>
     <div class="color-bg-primary"></div>
   </div>
   <div class="home-section">
-    <nav>
+    <nav class="container-fluid">
       <div class="row pt-4">
         <div class="col-3 d-flex justify-content-start px-3 ps-5 py-3">Nadia HAMA DJIBO</div>
         <div class="col-9 d-flex justify-content-end px-2">
           <span class="px-3 py-3">Mes expériences</span>
           <span class="px-3 py-3">A propos de moi</span>
           <span class="px-3 py-3">Mon cv</span>
-          <span class="overline px-3 py-2 mx-3 me-3 my-2">Contact</span>
+          <span class="px-3 py-3">Contact</span>
         </div>
       </div>
     </nav>
-    <div class="home-section-content d-flex flex-column justify-content-center">
+    <div class="container-fluid home-section-content d-flex flex-column justify-content-center">
       <div class="row d-flex justify-content-center">
-        <div class="col-12 col-lg-8 d-flex flex-column ">
+        <div class="col-12 col-md-8 d-flex flex-column ps-4 ps-md-0">
           <div class="fs-6">Bonjour, je m'appelle</div>
           <div class="h1">Nadia HAMA DJIBO</div>
           <div class="fs-6 fw-bold">Je recherche une alternance dans le droit.</div>
@@ -27,135 +26,149 @@
     </div>
   </div>
 
-  <div class="quick-contact-section d-flex justify-content-around align-items-center">
-      <div class="fw-bold fs-4">Contact facile</div>
-      <div class="d-flex align-items-center">
-        <div class="d-flex flex-column px-3">
-          <label class="pb-3"  from="name">Nom</label>
-          <input type="text" name="name" class="form-field">
+  <div class="container-fluid quick-contact-section d-flex align-items-center justify-content-center">
+    <div class="row d-flex align-items-center jutify-content-center">
+      <div class="col-12 col-md-2 d-flex align-items-center justify-content-center">
+        <div class="fw-bold fs-4 ps-2 py-3 py-md-0">Contact facile</div>
+      </div>
+      <div class="col-12 col-md-5 d-flex align-items-center justify-content-center">
+        <div class="d-flex flex-column px-2">
+          <label class="pb-2"  from="name">Nom</label>
+          <input type="text" name="name" class="form-control theme-input">
         </div>
-        <div class="d-flex flex-column px-3">
-          <label class="pb-3" for="email">email</label>
-          <input type="text" name="email" class="form-field">
+        <div class="d-flex flex-column px-2">
+          <label class="pb-2" for="email">email</label>
+          <input type="text" name="email" class="form-control theme-input">
         </div>
-        <div class="d-flex flex-column px-3">
-          <label class="pb-3"  for="message">Message</label>
-          <input type="text" name="message" class="form-field">
+      </div>
+      <div class="col-12 col-md-5 pt-3 pt-md-0 d-flex align-items-center justify-content-center">
+        <div class="d-flex flex-column ps-2 pe-4">
+          <label class="pb-2"  for="message">Message</label>
+          <input type="text" name="message" class="form-control theme-input">
         </div>
+        <div class="btn-primary align-self-end d-flex align-items-center me-1" style="height: 50px;">Envoyer</div>
+      </div>
+    </div>
+  </div>
 
-        <div class="btn-primary align-self-end">Envoyer</div>
+<!-- *************** *** section es domaines d'expérience *** ******************* -->
+<div class="container-fluid">
+  <div class="row justify-content-center pt-5 my-5 pb-2">
+    <div class="col-12 d-flex justify-content-center">
+      <div class="h2"> Mes domaines d'expérience </div>
+    </div>
+    <div class="col-12 col-md-8 d-flex justify-content-center">
+      <div class="text-center">J’ai un master 1 en droit des affaires à l’université de Clermont Ferrand. Je recherche actuellement une alternance
+        dans le domaine du droit des entreprises pour compléter mon master 2.</div>
+    </div>
+  </div>
+
+  <div class="row pt-5 pb-5 d-flex justify-content-center">
+    <div class="col-12 col-md-3 pb-md-2 d-flex flex-column align-items-center">
+      <!--images d'illustrations des domaines d'expériences-->
+      <div class="crop-circle" style="background-image: url('../../../assets/images/pro-1.jpeg'); width: 100px; height:100px; background-size: cover;"></div>
+      <div class="h6 pt-4">Droit des affaires</div>
+      <div class="text-center px-5">Hello dans les droits des affaires .Hello dans les droits des affaires</div>
+    </div>
+
+    <div class="col-12 col-md-3 pb-md-2 d-flex flex-column align-items-center">
+      <!--images d'illustrations des domaines d'expériences-->
+      <div class="crop-circle" style="background-image: url('../../../assets/images/pro-1.jpeg'); width: 100px; height:100px; background-size: cover;"></div>
+      <div class="h6 pt-4">Droit des affaires</div>
+      <div class="text-center px-5">Hello dans les droits des affaires .Hello dans les droits des affaires</div>
+    </div>
+
+    <div class="col-12 col-md-3 pb-md-2 d-flex flex-column align-items-center">
+      <!--images d'illustrations des domaines d'expériences-->
+      <div class="crop-circle" style="background-image: url('../../../assets/images/pro-1.jpeg'); width: 100px; height:100px; background-size: cover;"></div>
+      <div class="h6 pt-4">Droit des affaires</div>
+      <div class="text-center px-5 ">Hello dans les droits des affaires .Hello dans les droits des affaires</div>
     </div>
   </div>
 </div>
 
-<!-- *************** *** section es domaines d'expérience *** ******************* -->
-<div class="row justify-content-center pt-5 my-5 pb-2">
-  <div class="col-12 d-flex justify-content-center">
-    <div class="h1"> Mes domaines d'expérience </div>
-  </div>
-  <div class="col-12 col-md-6 d-flex justify-content-center">
-    <div class="text-center">J’ai un master 1 en droit des affaires à l’université de Clermont Ferrand. Je recherche actuellement une alternance
-      dans le domaine du droit des entreprises pour compléter mon master 2.</div>
-  </div>
-</div>
-
-<div class="row pt-5 pb-5 d-flex justify-content-around">
-  <div class="col-12 col-md-4 d-flex flex-column align-items-center">
-    <div class="crop-circle" style="background-image: url('../../../assets/images/pro-1.jpeg'); width: 100px; height:100px; background-size: cover;"></div>
-    <div class="h6 pt-4">Droit des affaires</div>
-    <div class="text-center px-5">Hello dans les droits des affaires .Hello dans les droits des affaires</div>
-  </div>
-
-  <div class="col-12 col-md-4 d-flex flex-column align-items-center">
-    <div class="crop-circle" style="background-image: url('../../../assets/images/pro-1.jpeg'); width: 100px; height:100px; background-size: cover;"></div>
-    <div class="h6 pt-4">Droit des affaires</div>
-    <div class="text-center px-5">Hello dans les droits des affaires .Hello dans les droits des affaires</div>
-  </div>
-
-  <div class="col-12 col-md-4 d-flex flex-column align-items-center">
-    <div class="crop-circle" style="background-image: url('../../../assets/images/pro-1.jpeg'); width: 100px; height:100px; background-size: cover;"></div>
-    <div class="h6 pt-4">Droit des affaires</div>
-    <div class="text-center px-5 ">Hello dans les droits des affaires .Hello dans les droits des affaires</div>
-  </div>
-</div>
 
 
 <!-- *************** *** section votre future alternante *** ******************* -->
-<div class="row bg-color-secondary mt-5 color-light py-5 ">
-  <div class="col-12 col-md-5 pt-5 pb-3 py-md-5 d-flex justify-content-center align-items-center">
-    <div class="crop-circle" style="background-image: url('../../../assets/images/pro-1.jpeg'); width: 250px; height:250px; background-size: cover;"></div>
-
-  </div>
-  <div class="col-12 py-5 col-md-7 d-flex flex-column">
-    <div class="h1 pb-4">Votre future alternante</div>
-    <div class="p">Ma motivation et mes compétences feront de moi l’attenante parfaite pour votre entreprise..</div>
-    <div class="p">Ma motivation et mes compétences feront de moi l’attenante parfaite pour votre entreprise..</div>
-
-    <div class="btn-primary mt-5">Contactez moi !</div>
-
+<div class="container-fluid">
+  <div class="row bg-color-secondary color-light">
+    <div class="col-12 col-md-5 pt-5 pb-3 py-md-5 d-flex justify-content-center align-items-center">
+      <div class="crop-circle" style="background-image: url('../../../assets/images/pro-1.jpeg'); width: 250px; height:250px; background-size: cover;"></div>
+    </div>
+    <div class="col-12 py-5 col-md-7 d-flex flex-column px-5 align-items-center align-items-md-start">
+      <div class="h2 ">Votre future alternante</div>
+      <div class="p">Ma motivation et mes compétences feront de moi l’attenante parfaite pour votre entreprise. feront de moi l’attenante parfaite pour votre entreprise.</div>
+      <div class="btn-primary mt-5">Contactez moi !</div>
+    </div>
   </div>
 </div>
 
 
-<!-- *************** *** section à propos de moi *** ******************* -->
-<div class="row justify-content-center pt-5 my-5 pb-2">
-  <div class="col-12 d-flex justify-content-center">
-    <div class="h1 pb-5">A propos de moi</div>
-  </div>
-  <div class="col-12 col-md-6 d-flex flex-column align-items-center">
-    <div class="p text-center">The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</div>
-    <div class="p text-center">Advised her not to do so, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed
-      because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</div>
-    <div class="p text-center">wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed
-    </div>
-  </div>
 
-  <div class="col-12 d-flex justify-content-center py-4">
-    <i class="bi bi-linkedin px-3" style="font-size: 25px; color: black;"></i>
-    <i class="bi bi-envelope-fill px-3" style="font-size: 25px; color: black;"></i>
+<!-- *************** *** section à propos de moi *** ******************* -->
+<div class="container-fluid">
+  <div class="row justify-content-center pt-5 my-5 pb-2">
+    <div class="col-12 d-flex justify-content-center">
+      <div class="h2">A propos de moi</div>
+    </div>
+    <div class="col-12 col-md-8 d-flex flex-column align-items-center px-5 px-md-0">
+      <div class="p text-center">The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way. </div> <br>
+      <div class="p text-center">Advised her not to do so, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed
+        because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</div> <br>
+      <div class="p text-center">wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed
+      </div>
+    </div>
+
+    <div class="col-12 d-flex justify-content-center py-4">
+      <i class="bi bi-linkedin px-3" style="font-size: 25px; color: black;"></i>
+      <i class="bi bi-envelope-fill px-3" style="font-size: 25px; color: black;"></i>
+    </div>
+    <div class="d-flex justify-content-center my-3">contact@gmail.com</div>
   </div>
-  <div class="d-flex justify-content-center my-3">contact@gmail.com</div>
 </div>
 
 
 <!-- *************** *** section contact *** ******************* -->
-<div class="row py-5 bg-color-light">
-  <div class="col-12 d-flex justify-content-center">
-    <div class="h1 pb-5">Contact</div>
-  </div>
-  <div class="col-12 col-md-7 px-5">
-    <div class="d-flex flex-row">
-      <div class="px-2">
-        <label for="name-contact" class="">Nom</label>
-        <input class="form-control" id="name-contact" type="text">
-      </div>
-      <div class="px-2 flex-grow-1">
-        <label for="email-contact" class="">Email</label>
-        <input class="form-control" id="email-contact" type="email">
-      </div>
+<div class="container-fluid">
+  <div class="row py-5 bg-color-light">
+    <div class="col-12 d-flex justify-content-center">
+      <div class="h2 pb-5">Contact</div>
     </div>
-    <div>
-      <div class="px-2 mt-4">
-        <textarea style="resize:none" class="form-control " rows="10"></textarea>
+    <div class="col-12 col-md-7 px-5">
+      <div class="d-flex flex-row">
+        <div class="px-2">
+          <label for="name-contact" class="pb-3">Nom</label>
+          <input class="form-control theme-input" id="name-contact" type="text">
+        </div>
+        <div class="px-2 flex-grow-1">
+          <label for="email-contact" class="pb-3">Email</label>
+          <input class="form-control theme-input" id="email-contact" type="email">
+        </div>
       </div>
-    </div>
-    <div class="d-flex justify-content-center flex-grow-1">
-      <div class="btn-primary px-3 py-2 mx-3 me-3 my-4">Envoyer</div>
-    </div>
+      <div>
+        <div class="px-2 mt-4">
+          <textarea style="resize:none" class="form-control theme-textarea" rows="10"></textarea>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center flex-grow-1">
+        <div class="btn-primary mt-4">Envoyer</div>
+      </div>
 
-  </div>
-  <div class="col-12 col-md-4 d-flex align-items-center justify-content-center">
-    <div class="p text-center">
-      The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious
-      Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made
-      herself on the way.
+    </div>
+    <div class="col-12 col-md-4 d-flex align-items-center justify-content-center pt-5 pt-md-0 px-5 px-md-0">
+      <div class="p text-center">
+        The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious
+        Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made
+        herself on the way.
+      </div>
     </div>
   </div>
 </div>
 
 
+
 <!-- *************** *** section pied de page *** ******************* -->
-<div class="d-flex flex-column justify-content-center align-items-center py-5 bg-color-primary color-light">
+<div class="d-flex flex-column justify-content-center align-items-center pt-5 bg-color-primary color-light">
   <div class="d-flex justify-content center pb-5">
     <span class="px-3 fw-bold">Mes expériences</span>
     <span class="px-3 fw-bold">A propos de moi</span>
@@ -171,7 +184,7 @@
     <span>06 01 02 03 04</span>
   </div>
 
-  <div class="d-flex justify-content-center pt-5">
+  <div class="d-flex justify-content-center pt-5 pb-3">
     Nadia HAMA DJIBO © 2021
   </div>
 </div>
