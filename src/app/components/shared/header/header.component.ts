@@ -1,11 +1,11 @@
-import { Component, OnInit,  HostBinding, HostListener } from '@angular/core';
+import { Component, OnInit, HostBinding, HostListener } from '@angular/core';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  selector: 'app-header',
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class HeaderComponent implements OnInit {
 
   isFixedNavbar: any;
   @HostBinding('class.navbar-opened') navbarOpened = false;
@@ -26,5 +26,6 @@ export class HomeComponent implements OnInit {
   toggleNavbar() {
     this.navbarOpened = !this.navbarOpened;
   }
+
 
 }

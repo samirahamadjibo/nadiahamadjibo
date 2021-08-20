@@ -1,0 +1,17 @@
+
+  <header class="navbar container-fluid py-4"  [ngClass]="{'navbar-fixed': isFixedNavbar}">
+      <div class="navbar-mobile-top">
+         <div>
+            <span class="ps-3">Nadia HAMA DJIBO</span>
+         </div>
+         <button mat-icon-button color="accent" class="navbar-toggle" (click)="toggleNavbar()">
+            <mat-icon>{{!navbarOpened ? 'menu': 'close'}}</mat-icon>
+         </button>
+      </div>
+      <div class="col-9 d-flex justify-content-end px-2 top-navbar">
+       <span class="px-3 py-3">Mes expériences</span>
+       <span class="px-3 py-3">A propos de moi</span>
+       <span class="px-3 py-3">Mon cv</span>
+       <span class="px-3 py-3">Contact</span>
+     </div>
+ </header>

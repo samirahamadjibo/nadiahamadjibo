@@ -1,11 +1,11 @@
-import { Component, OnInit,  HostBinding, HostListener } from '@angular/core';
+import { Component, OnInit, HostBinding, HostListener } from '@angular/core';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  selector: 'app-contact',
+  templateUrl: './contact.component.html',
+  styleUrls: ['./contact.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class ContactComponent implements OnInit {
 
   isFixedNavbar: any;
   @HostBinding('class.navbar-opened') navbarOpened = false;
