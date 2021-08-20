@@ -5,6 +5,7 @@ import { Article } from '../models/article';
   providedIn: 'root'
 })
 export class ArticleService {
+  articleToDisplay: number = 0;
   articles: Article[] = [
     //*********** *** début de la partie à copier pour créer un nouvel article */
     {
@@ -49,4 +50,13 @@ export class ArticleService {
   public getArticles(){
     return this.articles;
   }
+
+  public getArticleToDisplay(){
+    return this.articleToDisplay;
+  }
+
+  public setArticleToDisplay(i : number) {
+    this.articleToDisplay = i;
+  }
+
 }
