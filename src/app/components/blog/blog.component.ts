@@ -10,11 +10,15 @@ import { ArticleService } from 'src/app/services/article.service';
 export class BlogComponent implements OnInit {
   articles: Article[];
 
-  constructor(articleService: ArticleService) {
-    this.articles = articleService.getArticles();
+  constructor(public articleService: ArticleService) {
+    this.articles = this.articleService.getArticles();
    }
 
   ngOnInit(): void {
+  }
+
+  setArticleToDisplay(i: number){
+    this.articleService.setArticleToDisplay(i);
   }
 
 }

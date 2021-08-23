@@ -23,10 +23,12 @@ p{
 
 // ********************* ***  Couleurs *** ************************* //
 $gray-600: #6c757d;
+$gray-900: #212529;
 $primary:       #787E7C;
 $secondary:     #B9AFAE;
 $light:         #FAFAFA;
 $body-color:    $gray-600 ;
+$headings-color: $gray-900;
 
 
 
@@ -36,7 +38,7 @@ $body-color:    $gray-600 ;
 // ********************* ***  page d'acceuil (home) *** ************************* //
 .home-section, .contact-section, .blog-section{
   z-index: 100;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 .home-section{
   height: 75vh;
@@ -102,7 +104,7 @@ $body-color:    $gray-600 ;
 // ********************** *** styles *** ******************** //
 
 .btn-primary{
-  background-color: $primary;
+  background-color: $secondary;
   color: white;
   padding-left: 3.5rem;
   padding-right: 3.5rem;
@@ -201,6 +203,16 @@ $body-color:    $gray-600 ;
   }
 }
 
+.filter{
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.466);
+}
+
+.filter-content{
+  z-index: 0;
+}
+
 @media (max-width: map-get($map: $grid-breakpoints, $key: md)) {
 
   .navbar-opened:host .container {
@@ -238,4 +250,20 @@ $body-color:    $gray-600 ;
 }
 .a:hover{
   color: $gray-300
+}
+
+
+.article-header{
+  background-color: white;
+}
+
+.header-bg-primary{
+  background-color: $primary;
+  height: 15vh;
+}
+
+.illustration{
+  background-color: #cecece;
+  width: 100%;
+  height: 40vh;
 }

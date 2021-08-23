@@ -12,6 +12,7 @@ import { HeaderComponent } from './components/shared/header/header.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { CvComponent } from './components/cv/cv.component';
+import { ArticleComponent } from './components/article/article.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { CvComponent } from './components/cv/cv.component';
     HeaderComponent,
     FooterComponent,
     BlogComponent,
-    CvComponent
+    CvComponent,
+    ArticleComponent
   ],
   imports: [
     BrowserModule,

@@ -1,34 +1,22 @@
-<div class="color-bg color-bg-mini d-flex">
-  <div class="color-bg-secondary"></div>
-  <div class="color-bg-primary"></div>
-</div>
+<app-header></app-header>
+<div class="header-bg-primary"></div>
 
-<div class="contact-section d-flex align-items-end">
-  <app-header></app-header>
+<div class="illustration" style="background-image: url(../../../assets/images/office.jpeg); background-size: cover"></div>
 
-  <div class="container-fluid home-section-content d-flex flex-column justify-content-center">
-    <div class="row d-flex justify-content-center align-items-end">
-      <div class="col-12 col-md-8 ps-4 ps-md-0">
-        <div class="h1 color-light">Blog</div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="container-fluid py-5 ">
-  <div class="row d-flex justify-content-start px-5">
-      <div *ngFor="let article of articles; index as i" class="col-10 col-md-3 mx-md-4 py-5 my-3">
+<div class="container-fluid py-5">
+  <div class="row d-flex justify-content-center">
+      <div class="col-10 col-md-8 py-5">
         <div class="blog-item-short d-flex flex-column">
-          <div class="h5 mb-1">{{article.title}}</div>
-          <div class="subhead pb-3 color-secondary">{{article.subhead}}</div>
-          <p>
-            {{article.shortText}}
+          <div class="h1 mb-1">{{article.title}}</div>
+          <div class="subhead pb-3 color-secondary pb-5">{{article.subhead}}</div>
+          <p calss="pt-3">
+            {{article.text}}
           </p>
         </div>
-        <div class="btn-outline-primary my-3" (click)="setArticleToDisplay(i)" routerLink="/article">Lire l'article</div>
       </div>
     </div>
 </div>
+
 
 <div class="container-fluid quick-contact-section d-flex align-items-center justify-content-center">
   <div class="row d-flex align-items-center jutify-content-center">
@@ -55,4 +43,3 @@
   </div>
 </div>
 <app-footer></app-footer>
-
