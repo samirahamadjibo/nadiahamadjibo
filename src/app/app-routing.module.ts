@@ -1,3 +1,4 @@
+import { CvComponent } from './components/cv/cv.component';
 import { ArticleComponent } from './components/article/article.component';
 import { HomeComponent } from './components/home/home.component';
 import { ContactComponent } from './components/contact/contact.component';
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: 'article', component: ArticleComponent,
     data: { animation: 'Article' }
+  },
+  {
+    path: 'cv', component: CvComponent,
+    data: { animation: 'Cv' }
   },
 ];
 

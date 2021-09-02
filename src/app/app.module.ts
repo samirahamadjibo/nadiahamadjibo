@@ -13,6 +13,8 @@ import { FooterComponent } from './components/shared/footer/footer.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { CvComponent } from './components/cv/cv.component';
 import { ArticleComponent } from './components/article/article.component';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatRippleModule} from '@angular/material/core';
 
 
 @NgModule({
@@ -32,6 +34,8 @@ import { ArticleComponent } from './components/article/article.component';
     BrowserAnimationsModule,
     FormsModule,
     MatIconModule,
+    MatMenuModule,
+    MatRippleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

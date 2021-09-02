@@ -1,17 +1,34 @@
 
-  <header class="navbar container-fluid py-4" [ngClass]="{'navbar-fixed': isFixedNavbar}">
+  <header class="navbar container-fluid py-4 py-md-2 " [ngClass]="{'navbar-fixed': isFixedNavbar}">
       <div class="navbar-mobile-top">
          <div>
             <span class="a ps-3" routerLink="/">Nadia HAMA DJIBO</span>
          </div>
-         <button mat-icon-button color="accent" class="navbar-toggle" (click)="toggleNavbar()">
-            <mat-icon>{{!navbarOpened ? 'menu': 'close'}}</mat-icon>
-         </button>
+         <div class="btn" [matMenuTriggerFor]="menu" class="navbar-toggle" (click)="toggleNavbar()">
+          <mat-icon>more_vert</mat-icon>
+        </div>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>
+            <span>Mes expériences</span>
+          </button>
+          <button mat-menu-item>
+            <span>Check voice mail</span>
+          </button>
+          <button mat-menu-item>
+            <span>Cv</span>
+          </button>
+          <button mat-menu-item>
+            <span>Contact</span>
+          </button>
+        </mat-menu>
+         <!-- <button mat-icon-button color="accent" class="navbar-toggle" (click)="toggleNavbar()">
+
+         </button> -->
       </div>
       <div class="col-9 d-flex justify-content-end px-2 top-navbar">
        <span class="a px-3 py-3">Mes expériences</span>
        <span class="a px-3 py-3" routerLink="/blog">Blog</span>
-       <span class="a px-3 py-3">Mon cv</span>
+       <span class="a px-3 py-3" routerLink="/cv">Mon cv</span>
        <span class="a px-3 py-3" routerLink="/contact">Contact</span>
      </div>
  </header>
